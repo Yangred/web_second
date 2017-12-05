@@ -1,0 +1,255 @@
+/*
+* @Author: SmallRed
+* @Date:   2017-08-05 13:19:01
+* @Last Modified by:   SmallRed
+* @Last Modified time: 2017-08-12 16:26:00
+*/
+/*
+* @Author: SmallRed
+* @Date:   2017-07-26 19:15:30
+* @Last Modified by:   SmallRed
+* @Last Modified time: 2017-08-01 15:07:11
+*/
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+	font-family: '微软雅黑';
+}
+#nav{
+	width: 100%;
+	height: 60px;
+	box-shadow: 0 0 1px #999;
+	position:fixed;
+	top:0px;
+	background: #fff;
+	z-index: 3;
+}
+#logo{
+	float: left;
+	padding-left: 10px;
+	cursor: pointer;
+}
+#logo:hover{
+    animation: play 1s linear 1; 
+}
+ @keyframes play{
+	0%{ 
+		transform:rotateY(0deg);
+	}
+	
+	50%{ 
+		transform:rotateY(180deg);
+	}
+	
+	100%{ 
+		transform:rotateY(0deg);
+	}
+} 
+#nav ul{
+	width:720px;
+	height:60px;
+	float:right;
+	padding-right: 10px;
+}
+#nav ul li{
+	float:left;
+	width:120px;
+	height:60px;
+	text-align: center;
+	line-height: 60px;
+	transition:1s;
+}
+.nav_li_a{
+	display: block;
+	width:120px;
+	height:60px;
+	color: #666;
+}
+.nav_li{
+	border-bottom: 1px solid #999;
+	text-shadow:1px 1px 1px #999; 
+}
+#li2{
+	width:178px;
+	height:49px;
+	transform:translate(-58px,80px);
+	transition:1s;
+	width:0%;
+	overflow: hidden;
+	background: #fff;
+}
+#li2 a{
+	display: block;
+	width:178px;
+	height:49px;
+	text-align:left;
+	color:#aaa;
+	text-shadow:none;
+	text-indent: 2em;
+	transition:1s;
+	line-height:49px;
+}
+#nav ul li:nth-of-type(2):hover #li2{
+	transform:translate(-58px,20px);
+	width:178px;
+}
+#nav ul li:nth-of-type(2):hover #li2 a{
+	border-top:1px solid #aaa;
+}
+#li3{
+	width:178px;
+	height:196px;
+	transform:translate(-58px,80px);
+	transition:1s;
+	width:0;
+	overflow: hidden;
+	background: #fff;
+}
+#li3 a{
+	display: block;
+	width:178px;
+	height:49px;
+	text-align:left;
+	color:#aaa;
+	text-shadow:none;
+	text-indent: 2em;
+	transition:1s;
+	line-height:49px;
+}
+#nav ul li:nth-of-type(3):hover #li3{
+	transform:translate(-58px,20px);
+	width:178px;
+}
+#nav ul li:nth-of-type(3):hover #li3 a{
+	height:49px;
+	border-top:1px solid #aaa;
+}
+#li4{
+	width:178px;
+	height:196px;
+	transform:translate(-58px,80px);
+	transition:1s;
+	width:0;
+	overflow: hidden;
+	background: #fff;
+}
+#li4 a{
+	display: block;
+	width:178px;
+	height:49px;
+	text-align:left;
+	color:#aaa;
+	text-shadow:none;
+	text-indent: 2em;
+	transition:1s;
+	line-height:49px;
+}
+#nav ul li:nth-of-type(4):hover #li4{
+	transform:translate(-58px,20px);
+	width:178px;
+}
+#nav ul li:nth-of-type(4):hover #li4 a{
+	height:49px;
+	border-top:1px solid #aaa;
+}
+#footer{
+	width:100%;
+	height:36px;
+	position: fixed;
+	bottom:0px;
+	background:#fff;
+}
+#footer_left{
+	float:left;
+	margin-left:10px;
+	font-size: 14px;
+	color:#999;
+	line-height:36px;
+}
+#footer_left2{
+	float:left;
+	margin-left:20px;
+	font-size: 14px;
+	color:#888;
+	line-height:36px;
+	font-weight: bold;
+}
+#footer a{
+	float:left;
+	font-size: 14px;
+	line-height:36px;
+	color:#999;
+}
+#footer span{
+	float: right;
+	font-size:14px;
+	line-height:36px;
+	color:#999;
+	margin-right: 20px;
+}
+#top_img{
+	width: 100%;
+	height: 318px;
+	margin-top: 60px;
+	overflow: hidden;
+}
+#top_img img{
+	opacity: 0.7;
+	width: 100%;
+	transform: translateY(-200px);
+}
+#center_nav{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #ddd;
+}
+#center_nav ul{
+	width: 710px;
+	height: 50px;
+	margin:0 auto;
+}
+#center_nav ul li{
+	width: 112px;
+	height: 50px;
+	float: left;
+	margin-left: 30px;
+	line-height: 50px;
+}
+#center_nav ul li:hover a{
+	color:#333;
+	text-shadow:1px 1px 15px #666;
+	transform:scale(1.2);
+}
+#center_nav ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #999;
+	transition:0.5s;
+}
+#center_nav ul li:nth-of-type(2) a{
+	color:#333;
+}
+#content{
+	width: 1100px;
+	height: 497px;
+	margin:0px auto;
+	padding-bottom: 150px;
+}
+#content p{
+	margin-top: 20px;
+	color:#999;
+	font-size: 14px;
+	text-indent: 2em;
+	line-height: 24px;
+}
+#content img{
+	width: 500px;
+	margin-top: 80px;
+}
+#content_img{
+	width: 500px;
+	margin:0 auto;
+}
